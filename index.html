@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Survey Form Itzy</title>
+</head>
+<body>
+ 
+ <h1 id="title">Itzy Survey Form</h1>
+ <p id="description">Please fill the form, Thank You.</p>
+ 
+ <form  id="survey-form">
+   <label for="name" id="name-label">
+     Name
+     <input type="text" id="name" placeholder="Enter your name" required/>
+   </label>
+   
+   <label for="email" id="email-label">
+     Email
+     <input type="email" id="email" placeholder="Enter your email" required/>
+   </label>
+   
+   <label for="number" id="number-label">
+     Age
+     <input type="number" id="number" placeholder="How old are you?" min="15" max="40" />
+   </label>
+   
+   <label for="dropdown" id="dropdown-label">
+     How do you know itzy?
+     <select id="dropdown">
+       <option>Website</option>
+       <option>Social Media</option>
+       <option>Youtube</option>
+       <option>Other</option>
+    </select>  
+   </label>
+   
+   <label for="member" id="member-label">Who is your favorite member?</label>
+   
+     <input type="radio" value="attribute" name="member" checked /> Yeji <br />
+     <input type="radio" value="attribute" name="member" /> Lia <br />
+     <input type="radio" value="attribute" name="member" /> Ryujin <br />
+     <input type="radio" value="attribute" name="member" /> Chaeryeong <br />
+     <input type="radio"  value="attribute"  name="member" /> Yuna <br />
+    
+   <label for="songs" id="songs-label">Please Choose your favorite songs</label>
+    
+     <input type="checkbox" value="wannabe" /> Wannabe <br />
+     <input type="checkbox" value="icy" /> Icy <br />
+     <input type="checkbox" value="dalla-dalla" /> Dalla Dalla <br />
+     <input type="checkbox" value="not-shy" /> Not Shy <br />
+     <input type="checkbox" value="in-the-morning" /> In the morning <br />
+     <input type="checkbox" value="not-in-above" /> Not in above <br />
+    
+   <label for="comments" id="comments-label">
+     Any comments or suggestion?
+     <textarea id="comments" cols="30" row="10"/></textarea>
+   </label>
+       
+   <button id="submit" type="submit">Submit</button>
+ </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
